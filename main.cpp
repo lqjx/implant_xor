@@ -26,7 +26,6 @@ int main() {
 
     execMemory = VirtualAlloc(NULL, calcPayloadLen, MEM_RESERVE | MEM_COMMIT, PAGE_READWRITE);
 
-    // Debugging purposes
     std::cout << "Payload address: " << static_cast<void*>(calcPayload) << "\n";
     std::cout << "execMemory address: " << static_cast<void*>(calcPayload) << "\n";
     std::cout << "Press any key to execute payload.\n";
